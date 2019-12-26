@@ -1,0 +1,94 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.teacherassistant"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:7:5-65
+13-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:7:22-62
+14
+15    <uses-feature
+15-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:9:5-11:35
+16        android:name="android.hardware.camera"
+16-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:10:9-47
+17        android:required="true" />
+17-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:11:9-32
+18
+19    <application
+19-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:13:5-42:19
+20        android:allowBackup="true"
+20-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:14:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.0.1] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:15:9-43
+24        android:label="@string/app_name"
+24-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:16:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:17:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:18:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:19:9-40
+29        <activity android:name="com.example.teacherassistant.ListView" />
+29-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:20:9-55
+29-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:20:19-43
+30        <activity
+30-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:21:9-23:72
+31            android:name="com.example.teacherassistant.add_student"
+31-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:22:13-40
+32            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+32-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:23:13-69
+33        <activity
+33-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:24:9-26:72
+34            android:name="com.example.teacherassistant.create_class"
+34-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:25:13-41
+35            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+35-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:26:13-69
+36        <activity
+36-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:27:9-29:72
+37            android:name="com.example.teacherassistant.start_survey"
+37-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:28:13-41
+38            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+38-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:29:13-69
+39        <activity
+39-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:30:9-32:72
+40            android:name="com.example.teacherassistant.create_class_activity"
+40-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:31:13-50
+41            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+41-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:32:13-69
+42        <activity
+42-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:33:9-41:20
+43            android:name="com.example.teacherassistant.MainActivity"
+43-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:34:13-41
+44            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+44-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:35:13-69
+45            <intent-filter>
+45-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:36:13-40:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:37:17-69
+46-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:37:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:39:17-77
+48-->C:\Users\HP\AndroidStudioProjects\ChildrenApp\app\src\main\AndroidManifest.xml:39:27-74
+49            </intent-filter>
+50        </activity>
+51    </application>
+52
+53</manifest>
