@@ -32,7 +32,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_create_class"
+            android:id="@+id/editText_student_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.9"
@@ -49,21 +49,10 @@
         android:name="com.example.teacherassistant.CameraFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/browse_fragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_std_linearView" />
-
-
-    <fragment
-        android:id="@+id/browse_fragment"
-        android:name="com.example.teacherassistant.BrowseFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/student_add_done"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cam_fragment" />
+        app:layout_constraintTop_toBottomOf="@+id/add_std_linearView" />
 
     <Button
         android:id="@+id/student_add_done"
@@ -75,7 +64,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/browse_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/cam_fragment"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 

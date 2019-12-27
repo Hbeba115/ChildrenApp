@@ -9,7 +9,7 @@
 
 
     <ListView
-        android:id="@+id/listView_create_class"
+        android:id="@+id/listView_start_survey"
         style="@style/AppTheme"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,5 +30,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/listView_create_class" />
+        app:layout_constraintTop_toBottomOf="@id/listView_start_survey" />
 </androidx.constraintlayout.widget.ConstraintLayout>

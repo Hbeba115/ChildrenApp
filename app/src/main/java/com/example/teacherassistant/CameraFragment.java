@@ -1,7 +1,10 @@
 package com.example.teacherassistant;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
@@ -21,6 +24,20 @@ import static android.app.Activity.RESULT_OK;
 public class CameraFragment extends Fragment {
     private ImageView imgCapture;
     private static final int Image_Capture_Code = 1;
+    OnDataPass dataPasser;
+
+    public interface OnDataPass {
+        public void onDataPass(Bitmap image);
+    }
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        dataPasser = (OnDataPass) context;
+    }
+    public void passData(Bitmap image) {
+        dataPasser.onDataPass(image);
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -38,12 +55,17 @@ public class CameraFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == Image_Capture_Code) {
+
             if (resultCode == RESULT_OK) {
                 Bitmap bp = (Bitmap) data.getExtras().get("data");
                 imgCapture.setImageBitmap(bp);
+                imgCapture.setContentDescription("occupied");
+                passData(bp);
             } else if (resultCode == RESULT_CANCELED) {
                 Toast.makeText(getActivity(), "Cancelled", Toast.LENGTH_LONG).show();
             }
         }
     }
+
 }
+

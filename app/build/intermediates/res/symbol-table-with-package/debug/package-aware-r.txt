@@ -729,7 +729,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id browse_fragment
 id buttonPanel
 id cam_fragment
 id cancel_action
@@ -756,6 +755,7 @@ id dimensions
 id direct
 id disableHome
 id editText_create_class
+id editText_student_name
 id edit_query
 id end
 id end_padder
@@ -789,6 +789,7 @@ id linearView
 id linearlayout2
 id listMode
 id listView_create_class
+id listView_start_survey
 id list_item
 id media_actions
 id message
